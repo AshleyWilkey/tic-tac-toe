@@ -1,0 +1,36 @@
+#board {
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  height: 480px;
+  border: solid black 2px;
+}
+
+.row:nth-child(2) {
+  border-top: solid black 2px;
+  border-bottom: solid black 2px;
+}
+
+.row {
+  display: flex;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+.col {
+  background-color: aliceblue;
+  flex: 1;
+  box-sizing: border-box;
+  transition: 0.2s;
+  cursor: pointer;
+  filter: brightness(85%);
+}
+
+.col:hover {
+  filter: brightness(100%);
+}
+
+.row .col:nth-child(2) {
+  border-left: solid black 2px;
+  border-right: solid black 2px;
+}
